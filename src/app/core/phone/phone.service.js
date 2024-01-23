@@ -1,15 +1,6 @@
-'use strict';
 
-angular.
-  module('core.phone').
-  factory('Phone', ['$resource',
-    function($resource) {
-      return $resource('assets/phones/:phoneId.json', {}, {
-        query: {
-          method: 'GET',
-          params: {phoneId: 'phones'},
-          isArray: true
-        }
-      });
-    }
-  ]);
+import * as angular from 'angular'
+import { downgradeInjectable } from '@angular/upgrade/static';
+import { PhoneService } from './phone.service';
+
+angular.module('core.phone').factory('Phone', downgradeInjectable(PhoneService))
