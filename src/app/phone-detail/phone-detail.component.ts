@@ -1,8 +1,6 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component,  OnInit } from '@angular/core';
 import { PhoneDetail } from '../models/phone-detail.model';
 import { PhoneService } from '../core/phone/phone.service';
-import * as angular from 'angular';
-import { RouteParams } from '../ajs-upgraded-providers';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
