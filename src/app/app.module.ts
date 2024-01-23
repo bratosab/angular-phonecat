@@ -31,7 +31,7 @@ import { CheckmarkPipe } from './core/checkmark/checkmark.pipe';
     FormsModule
   ],
   providers: [PhoneService, routeParamsProvider],
-  //bootstrap: [AppComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { 
   constructor(private upgrade: UpgradeModule) {}
